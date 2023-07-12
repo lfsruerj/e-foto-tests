@@ -20,8 +20,8 @@ body:
       - Linux
       - Mac
       - Other
-    validations:
-      required: true
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Environment
