@@ -1,0 +1,66 @@
+name: 🚀 Enhancement
+description: Request an enhancement or new feature
+title: "[ENHANCEMENT] <title>"
+labels: [enhancement, Needs Triage]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing enhancement request for this?
+    description: Please search to see if an enhancement request already exists for the idea you have in mind.
+    options:
+    - label: I have searched the existing enhancement requests
+      required: true
+- type: dropdown
+  id: system
+  attributes:
+    label: In which systems the enhancement is relevant to?
+    multiple: true
+    options:
+      - Windows
+      - Linux
+      - Mac
+      - Other
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Current Limitations or Workarounds
+    description: |
+      Are there any current limitations or workarounds that this enhancement could help address?
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Description
+    description: |
+      Please provide a detailed description of the enhancement you would like to see implemented.
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Use Case or Benefits
+    description: |
+      How would this enhancement be beneficial? What use cases would it serve?
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Possible Implementation
+    description: |
+      If you have any ideas or suggestions on how this enhancement could be implemented, please share them here.
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Information
+    description: |
+      Links? References? Anything that will give us more context about the enhancement you are proposing!
+      
+      Tip: You can attach images or files by clicking this area to highlight it and then dragging files in.
+    render: markdown
+  validations:
+    required: false
